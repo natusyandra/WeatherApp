@@ -169,7 +169,7 @@ class ViewController: UIViewController {
     @objc func handleAddPlaceButton() {
         let alertController = UIAlertController(title: "Добавить город", message: "", preferredStyle: .alert)
         alertController.addTextField { (textField : UITextField!) -> Void in
-            textField.placeholder = "City Name"
+            textField.placeholder = "Название"
         }
         let saveAction = UIAlertAction(title: "Добавить", style: .default, handler: { alert -> Void in
             let firstTextField = alertController.textFields![0] as UITextField
