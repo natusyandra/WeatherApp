@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+// Pop
     let networkManager = WeatherNetworkManager()
     
     let currentLocation: UILabel = {
