@@ -167,17 +167,17 @@ class ViewController: UIViewController {
     
     //MARK: - Handlers
     @objc func handleAddPlaceButton() {
-        let alertController = UIAlertController(title: "Add City", message: "", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Добавить город", message: "", preferredStyle: .alert)
         alertController.addTextField { (textField : UITextField!) -> Void in
             textField.placeholder = "City Name"
         }
-        let saveAction = UIAlertAction(title: "Add", style: .default, handler: { alert -> Void in
+        let saveAction = UIAlertAction(title: "Добавить", style: .default, handler: { alert -> Void in
             let firstTextField = alertController.textFields![0] as UITextField
             print("City Name: \(firstTextField.text)")
             guard let cityname = firstTextField.text else { return }
             self.loadData(city: cityname) // Calling the loadData function
         })
-        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: { (action : UIAlertAction!) -> Void in
+        let cancelAction = UIAlertAction(title: "Отменя", style: .destructive, handler: { (action : UIAlertAction!) -> Void in
             print("Cancel")
         })
         
