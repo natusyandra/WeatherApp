@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         label.text = "...Location"
         label.textAlignment = .left
         label.numberOfLines = 0
+        label.textColor = .green
         label.font = UIFont.systemFont(ofSize: 38, weight: .heavy)
         
         return label
